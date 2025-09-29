@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Property</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1{
+            margin: 25px auto;
+            text-decoration: underline;
+            color: #333;
+            font-size: 54px;
+        }
+        .section{
+            margin: 25px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            max-width: 700px;
+        }
+        .section h2{
+             color: #444;
+            text-decoration: underline;
+            font-size: 30px;
+        }
+        .rotate-box{
+            width: 100px;
+            height: 100px;
+            margin: 15px auto;
+            background-color: blue;
+            transition: transform;
+            transition-duration: 2s;
+            transition-property: all;
+            transition-timing-function: ease;
+        }
+         .rotate-box:hover{
+            transform: rotate(90deg);
+            background-color: red;
+            cursor: pointer;
+            border-radius: 5px;
+         }
+
+         .scale{
+            width: 80%;
+            height: 100%;
+            margin: 15px auto;
+            background-color: blue;
+            transition: transform;
+            transition-duration: 2s;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+         }
+         .scale:hover{
+            transform: scale(1.2);
+            background-color: red;
+            cursor: pointer;
+            border-radius: 5px;
+         }
+         .translate{
+            width: 100px;
+            height: 100px;
+            margin: 15px auto;
+            background-color: blue;
+            transition: transform;
+            transition-duration: 2s;
+            transition-property: all;
+            transition-timing-function: ease;
+         }
+         .translate:hover{
+            transform: translateX(50px);
+            background-color: red;
+            cursor: pointer;
+             border-radius: 5px;
+         }
+         .skew{
+            width: 100px;
+            height: 100px;
+            margin: 15px auto;
+            background-color: blue;
+            transition: transform;
+            transition-duration: 2s;
+            transition-property: all;
+            transition-timing-function: ease;
+         }
+         .skew:hover{
+            transform: skew(45deg);
+            background-color: red;
+            cursor: pointer;
+            border-radius: 5px;
+         }
+         .scale-translate{
+            width: 100px;
+            height: 100px;
+            margin: 15px auto;
+            background-color: blue;
+            transition: transform;
+            transition-duration: 2s;
+            transition-property: all;
+            transition-timing-function: ease;
+         }
+         .scale-translate:hover{
+            transform: scale(0.2) translate(-50%, -50%);
+            background-color: red;
+            cursor: pointer;
+            border-radius: 5px;
+         }
+         .matrix{
+            width: 100px;
+            height: 100px;
+            margin: 50px auto;
+            background-color: blue;
+            transition: transform;
+            transition-duration: 2s;
+            transition-property: all;
+            transition-timing-function: ease;
+         }
+         .matrix:hover{
+            transform: matrix(1, 2, 3, 4, 5, 6);
+            background-color: red;
+            cursor: pointer;
+            border-radius: 5px;
+         }
+    </style>
+</head>
+<body>
+        <h1>Transform Property</h1>
+
+        <div class="section">
+        <h2>Rotate Box</h2>
+        <div class="rotate-box"></div>
+        </div>
+
+        <div class="section">
+            <h2>Scale Effect on Hover</h2>
+        <div class="scale">Button</div>
+        </div>
+
+        <div class="section">
+            <h2>Translate on Hover</h2>
+        <div class="translate"></div>
+        </div>
+
+        <div class="section">
+            <h2>Skew on Hover</h2>
+        <div class="skew"></div>
+        </div>
+
+        <div class="section">
+            <h2>Scale and Translate on Hover</h2>
+        <div class="scale-translate"></div>
+        </div>
+
+         <div class="section">
+            <h2>Matrix on Hover</h2>
+        <div class="matrix"></div>
+        </div>
+</body>
+</html>
